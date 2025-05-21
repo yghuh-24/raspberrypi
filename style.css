@@ -1,0 +1,72 @@
+html {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, #f6e7ff 0%, #fff0f5 100%);
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #9b6b9e;
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #a882b5;
+  font-size: 1.8em;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+.led-status {
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.led-icon {
+  width: 100px;
+  height: 100px;
+  transition: all 0.3s ease;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  background: linear-gradient(145deg, #e2c0ff, #f0d6ff);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  color: #6a4871;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1),
+    -5px -5px 15px rgba(255, 255, 255, 0.8);
+}
+
+button:hover {
+  background: linear-gradient(145deg, #f0d6ff, #e2c0ff);
+  transform: translateY(-3px);
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.15),
+    -7px -7px 20px rgba(255, 255, 255, 0.9);
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1),
+    -3px -3px 10px rgba(255, 255, 255, 0.7);
+}
